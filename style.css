@@ -18,7 +18,11 @@
     
 }
 
-
+.bannerRelleno{
+    height: 300px;
+    object-fit: cover;
+    
+}
 .card{
     margin:4px;
 }

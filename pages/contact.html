@@ -30,10 +30,10 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
                         </li>
                         <li class="me-1 ms-1 btn btn-outline-success btn-sm nav-item m-4">
-                            <a class="nav-link" href="#">UPCOMING EVENTS</a>
+                            <a class="nav-link" href="../pages/upcoming.html">UPCOMING EVENTS</a>
                         </li>
                         <li class="me-1 ms-1 btn btn-outline-danger btn-sm nav-item m-4">
-                            <a class="nav-link" href="#">PAST EVENTS</a>
+                            <a class="nav-link" href="../pages/past.html">PAST EVENTS</a>
                         </li>
                         <li class="me-1 ms-1 btn btn-outline-warning btn-sm nav-item m-4">
                             <a class="nav-link" href="#">CONTACT</a>
@@ -51,7 +51,7 @@
     </header>
     <main class="bg-body-secondary ">
 
-        <div class="d-none d-lg-block p-4">
+        <div class="p-4">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -66,51 +66,20 @@
                         aria-label="Slide 5"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active bannerClass">
-                        <a href="../index.html" class="d-block w-100">
-                            <img src="../assets/optional_banner_1.jpg" class="d-block w-100" alt="Banner1">
-                            <div class="carousel-caption">
-                                <h5>Home</h5>
-                                <p>Aquí veras todos los eventos hasta la fecha y los futuros.</p>
-                            </div>
-                        </a>
+                    <div class="carousel-item active bannerRelleno">
+                            <img src="../assets/optional_banner_1.jpg" class="d-block w-100 bannerRelleno" alt="Banner1">
                     </div>
-                    <div class="carousel-item bannerClass">
-                        <a href="#" class="d-block w-100">
-                            <img src="../assets/optional_banner_2.jpg" class="d-block w-100" alt="Banner2">
-                            <div class="carousel-caption">
-                                <h5>Ucoming events</h5>
-                                <p>Aquí podrá consultar eventos pasados.</p>
-                            </div>
-                        </a>
+                    <div class="carousel-item bannerClass bannerRelleno">
+                            <img src="../assets/optional_banner_2.jpg" class="d-block w-100 bannerRelleno" alt="Banner2">
                     </div>
-                    <div class="carousel-item bannerClass">
-                        <a href="#" class="d-block w-100">
-                            <img src="../assets/optional_banner_3.jpg" class="d-block w-100" alt="Banner3">
-                            <div class="carousel-caption">
-                                <h5>PAST EVENTS</h5>
-                                <p>Aquí podrá consultar eventos futuros.</p>
-                            </div>
-                        </a>
-
+                    <div class="carousel-item bannerClass bannerRelleno">
+                            <img src="../assets/optional_banner_3.jpg" class="d-block w-100 bannerRelleno" alt="Banner3">
                     </div>
-                    <div class="carousel-item bannerClass">
-                        <a href="#" class="d-block w-100">
-                            <img src="../assets/optional_banner_4.jpg" class="d-block w-100" alt="Banner4">
-                            <div class="carousel-caption">
-                                <h5>CONTACT</h5>
-                                <p>Para información y reservas ponte en contacto con nosotros.</p>
-                            </div>
-                        </a>
+                    <div class="carousel-item bannerClass bannerRelleno">
+                            <img src="../assets/optional_banner_4.jpg" class="d-block w-100 bannerRelleno" alt="Banner4">
                     </div>
-                    <div class="carousel-item bannerClass">
-                        <a href="../pages/stats.html" class="d-block w-100">
-                            <img src="../assets/optional_banner_5.jpg" class="d-block w-100" alt="Banner5">
-                            <div class="carousel-caption">
-                                <h5>STATS</h5>
-                                <p>Estadísticas de los eventos hasta la fecha.</p>
-                            </div>
-                        </a>
+                    <div class="carousel-item bannerClass bannerRelleno">
+                            <img src="../assets/optional_banner_5.jpg" class="d-block w-100 bannerRelleno" alt="Banner5">
                     </div>
 
 
@@ -149,25 +118,31 @@
 
 
 
-        <form class="g-3">
+        <form class="g-3 p-5">
             <div>
                 <div class="row">
                     <label for="validationDefault01" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="validationDefault01" value="Fernando" required>
+                    <input type="text" class="form-control" id="validationDefault01" value=""
+                        placeholder="Fernando" required>
+                </div>
+                <div class="row">
+                    <label for="validationDefault01" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" value=""
+                        placeholder="Martinez" required>
                 </div>
 
-                <div class="mb-3">
+                <div class="row">
                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1"
                         placeholder="name@example.com" required>
                 </div>
-                <div class="mb-3">
+                <div class="row">
                     <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
+                </div>
 
             </div>
-            <div class="col-12">
+            <div class="col-12 d-flex justify-content-end mt-5">
                 <button class="btn btn-primary" type="submit">Submit form</button>
             </div>
         </form>

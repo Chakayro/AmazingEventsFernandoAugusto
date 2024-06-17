@@ -30,10 +30,10 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
                         </li>
                         <li class="me-1 ms-1 btn btn-outline-success btn-sm nav-item m-4">
-                            <a class="nav-link" href="#">UPCOMING EVENTS</a>
+                            <a class="nav-link" href="../pages/upcoming.html">UPCOMING EVENTS</a>
                         </li>
                         <li class="me-1 ms-1 btn btn-outline-danger btn-sm nav-item m-4">
-                            <a class="nav-link" href="#">PAST EVENTS</a>
+                            <a class="nav-link" href="../pages/past.html">PAST EVENTS</a>
                         </li>
                         <li class="me-1 ms-1 btn btn-outline-warning btn-sm nav-item m-4">
                             <a class="nav-link" href="../pages/contact.html">CONTACT</a>
@@ -49,9 +49,9 @@
         </nav>
 
     </header>
-    <main class="bg-body-secondary">
+    <main class="bg-body-secondary p-3">
 
-        <div class="d-none d-lg-block p-4">
+        <div class="p-4">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -66,51 +66,20 @@
                         aria-label="Slide 5"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active bannerClass">
-                        <a href="../index.html" class="d-block w-100">
-                            <img src="../assets/optional_banner_1.jpg" class="d-block w-100" alt="Banner1">
-                            <div class="carousel-caption">
-                                <h5>Home</h5>
-                                <p>Aquí veras todos los eventos hasta la fecha y los futuros.</p>
-                            </div>
-                        </a>
+                    <div class="carousel-item active bannerClass bannerRelleno">
+                            <img src="../assets/optional_banner_1.jpg" class="d-block w-100 bannerRelleno" alt="Banner1">
                     </div>
-                    <div class="carousel-item bannerClass">
-                        <a href="#" class="d-block w-100">
-                            <img src="../assets/optional_banner_2.jpg" class="d-block w-100" alt="Banner2">
-                            <div class="carousel-caption">
-                                <h5>Ucoming events</h5>
-                                <p>Aquí podrá consultar eventos pasados.</p>
-                            </div>
-                        </a>
+                    <div class="carousel-item bannerClass bannerRelleno">
+                            <img src="../assets/optional_banner_2.jpg" class="d-block w-100 bannerRelleno" alt="Banner2">
                     </div>
-                    <div class="carousel-item bannerClass">
-                        <a href="#" class="d-block w-100">
-                            <img src="../assets/optional_banner_3.jpg" class="d-block w-100" alt="Banner3">
-                            <div class="carousel-caption">
-                                <h5>PAST EVENTS</h5>
-                                <p>Aquí podrá consultar eventos futuros.</p>
-                            </div>
-                        </a>
-
+                    <div class="carousel-item bannerClass bannerRelleno">
+                            <img src="../assets/optional_banner_3.jpg" class="d-block w-100 bannerRelleno" alt="Banner3">
                     </div>
-                    <div class="carousel-item bannerClass">
-                        <a href="../pages/contact.html" class="d-block w-100">
+                    <div class="carousel-item bannerClass bannerRelleno">
                             <img src="../assets/optional_banner_4.jpg" class="d-block w-100" alt="Banner4">
-                            <div class="carousel-caption">
-                                <h5>CONTACT</h5>
-                                <p>Para información y reservas ponte en contacto con nosotros.</p>
-                            </div>
-                        </a>
                     </div>
-                    <div class="carousel-item bannerClass">
-                        <a href="#" class="d-block w-100">
+                    <div class="carousel-item bannerRelleno">
                             <img src="../assets/optional_banner_5.jpg" class="d-block w-100" alt="Banner5">
-                            <div class="carousel-caption">
-                                <h5>STATS</h5>
-                                <p>Estadísticas de los eventos hasta la fecha.</p>
-                            </div>
-                        </a>
                     </div>
 
 
@@ -150,78 +119,115 @@
 
 
 
-
-
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Event Stadistics</th>
-                   
-                  </tr>
-              <tr>
-                <th scope="col">Events wtith higest % of assistence</th>
-                <th scope="col">Events wtith lowes % of assistence</th>
-                <th scope="col">Events wtith larger capacity</th>
-
+<div class="p-3 row">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Event Stadistics</th>
+                <th scope="col"></th>
+               
               </tr>
-            </thead>
-            <tbody>
-              <tr>
+          <tr>
+            <th scope="col">Events wtith higest % of assistence</th>
+            <th scope="col">Events wtith lowes % of assistence</th>
+            <th scope="col">Events wtith larger capacity</th>
 
-                <td>Metallica in concert</td>
-                <td>Halloween Night</td>
-                <td>School Book Fairv</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+
+            <td>School Book Fair</td>
+            <td>10K for life</td>
+            <td>School Book Fair</td>
+          </tr>
+       
+        </tbody>
+      </table>
+
+      <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th class="d-flex justify-content-end" scope="col">Upcoming evensts stadistics by category</th>
+                <th scope="col"></th>
               </tr>
-           
-            </tbody>
-          </table>
+          <tr>
+            <th scope="col">Categories</th>
+            <th scope="col">Revenues</th>
+            <th scope="col">Porcentage of assistence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Music Concert</td>
+            <td>20,700,000</td>
+            <td>100%</td>
+          </tr>
+        </tbody>
+        <tbody>
+            <tr>
+              <td>Let's go to the cinema</td>
+              <td>2,250,000</td>
+              <td>100%</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Costume Party</td>
+              <td>108,000</td>
+              <td>75%</td>
+            </tr>
+          </tbody>
+      </table>
 
-          <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Event Stadistics</th>
-                   
-                  </tr>
-              <tr>
-                <th scope="col">Events wtith higest % of assistence</th>
-                <th scope="col">Events wtith lowes % of assistence</th>
-                <th scope="col">Events wtith larger capacity</th>
-
+      <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th class="d-flex justify-content-end" scope="col">Past evensts stadistics by category</th>
+                <th scope="col"></th>
               </tr>
-            </thead>
-            <tbody>
-              <tr>
+          <tr>
+            <th scope="col">Categories</th>
+            <th scope="col">Revenues</th>
+            <th scope="col">Porcentage of assistence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Museum</td>
+            <td>988,380</td>
+            <td>80.36%</td>
+          </tr>
+        </tbody>
+        <tbody>
+            <tr>
+              <td>Food Fair</td>
+              <td>213,780</td>
+              <td>95.01%</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Book Exchange</td>
+              <td>123,286</td>
+              <td>82.19%</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Soccer Field</td>
+              <td>77,094</td>
+              <td>85.66%</td>
+            </tr>
+          </tbody>
+          
+      </table>
+</div>
 
-                <td>Metallica in concert</td>
-                <td>Halloween Night</td>
-                <td>School Book Fairv</td>
-              </tr>
-           
-            </tbody>
-          </table>
-          <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Event Stadistics</th>
-                   
-                  </tr>
-              <tr>
-                <th scope="col">Events wtith higest % of assistence</th>
-                <th scope="col">Events wtith lowes % of assistence</th>
-                <th scope="col">Events wtith larger capacity</th>
-
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-
-                <td>Metallica in concert</td>
-                <td>Halloween Night</td>
-                <td>School Book Fairv</td>
-              </tr>
-           
-            </tbody>
-          </table>
+       
 
 
     </main>
@@ -246,7 +252,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="me-5 mt-2">
+                <div class="me-2 mt-2">
                     <a href="https://www.mindhubweb.com/">COHORT</a>
                 </div>
             </div>
