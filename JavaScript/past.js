@@ -210,6 +210,5 @@ const data = {
           nuevasTarjetas.querySelector("img").src = data.events[i].image;
           nuevasTarjetas.getElementsByClassName("card-text")[0].innerHTML = data.events[i].description;  
           nuevasTarjetas.getElementsByClassName("card-text")[1].innerText = "Price $" + data.events[i].price;
-          console.log(data.events[i].date  + " vs " + data.currentDate);
     }
   }
