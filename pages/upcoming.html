@@ -31,16 +31,16 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
                         </li>
                         <li class="me-1 ms-1 btn btn-outline-success btn-sm nav-item m-4">
-                            <a class="nav-link" href="#">UPCOMING EVENTS</a>
+                            <a class="nav-link" href="./upcoming.html">UPCOMING EVENTS</a>
                         </li>
                         <li class="me-1 ms-1 btn btn-outline-danger btn-sm nav-item m-4">
-                            <a class="nav-link" href="../pages/past.html">PAST EVENTS</a>
+                            <a class="nav-link" href="./past.html">PAST EVENTS</a>
                         </li>
                         <li class="me-1 ms-1 btn btn-outline-warning btn-sm nav-item m-4">
-                            <a class="nav-link" href="../pages/contact.html">CONTACT</a>
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
                         </li>
                         <li class="me-1 ms-1 btn btn btn-outline-info btn-sm nav-item m-4">
-                            <a class="nav-link" href="../pages/stats.html">STATS</a>
+                            <a class="nav-link" href="./stats.html">STATS</a>
                         </li>
 
                     </ul>
@@ -52,8 +52,8 @@
     </header>
     <main class="bg-body-secondary">
 
-        <div class="d-none d-lg-block p-4">
-            <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="p-4">
+            <div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -77,16 +77,16 @@
                         </a>
                     </div>
                     <div class="carousel-item bannerClass">
-                        <a href="#" class="d-block w-100">
+                        <a href="./upcoming.html" class="d-block w-100">
                             <img src="../assets/optional_banner_2.jpg" class="d-block w-100" alt="Banner2">
                             <div class="carousel-caption">
-                                <h5>Ucoming events</h5>
+                                <h5>Upcoming events</h5>
                                 <p>Aquí podrá consultar eventos pasados.</p>
                             </div>
                         </a>
                     </div>
                     <div class="carousel-item bannerClass">
-                        <a href="../pages/past.html" class="d-block w-100">
+                        <a href="./past.html" class="d-block w-100">
                             <img src="../assets/optional_banner_3.jpg" class="d-block w-100" alt="Banner3">
                             <div class="carousel-caption">
                                 <h5>PAST EVENTS</h5>
@@ -96,7 +96,7 @@
 
                     </div>
                     <div class="carousel-item bannerClass">
-                        <a href="../pages/contact.html" class="d-block w-100">
+                        <a href="./contact.html" class="d-block w-100">
                             <img src="../assets/optional_banner_4.jpg" class="d-block w-100" alt="Banner4">
                             <div class="carousel-caption">
                                 <h5>CONTACT</h5>
@@ -105,7 +105,7 @@
                         </a>
                     </div>
                     <div class="carousel-item bannerClass">
-                        <a href="../pages/stats.html" class="d-block w-100">
+                        <a href="./stats.html" class="d-block w-100">
                             <img src="../assets/optional_banner_5.jpg" class="d-block w-100" alt="Banner5">
                             <div class="carousel-caption">
                                 <h5>STATS</h5>
@@ -128,32 +128,21 @@
                 </button>
             </div>
 
-
             <div class="navbar navbar-expand-lg d-flex justify-content-between  ms-4 me-4 pt-4">
-
-                    <div class="row">
-                        <div class="col form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option3">
-                            <label class="form-check-label" for="inlineCheckbox1">Costume Party</label>
-                        </div>
-                        <div class="col form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4">
-                            <label class="form-check-label" for="inlineCheckbox2">Music Concert</label>
-                        </div>
-                        <div class="col form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option7">
-                            <label class="form-check-label" for="inlineCheckbox2">Let's go to the cinema</label>
-
+                <div class="container-fluid">
+                    <div class="row row-sm-cols-2" id="checkboxCategoria">
+                        <div class="col form-check form-check-inline checkers">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" >
+                            <label class="form-check-label" for="inlineCheckbox1">Food Fair</label>
                         </div>
                     </div>
 
+                </div>
 
                 <div>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex" role="search" id="buacador">
                         <input class="form-control me-2 text-center" type="search" placeholder="Search"
                             aria-label="Search">
-                        <!-- centre el texto -->
-                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -161,70 +150,39 @@
 
 
 
-        <div class=" p-4">
+        <div class="p-4 ">
             <div class="container-fluid d-flex flex-wrap justify-content-center" id="tarjetas">
-               
-
-
-
-
-
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/costume_party.jpg" class="card-img-top h-50" alt="Card 3 Halloween Night">
+                
+                <div class="card" style="width: 18rem;"> 
+                    <img src="../assets/food_fair.jpg" class="card-img-top h-50" alt="Card 1 Art Exhibition">
                     <div class="card-body">
-                        <h5 class="card-title ">Halloween Night</h5>
-                        <p class="card-text">Come in your scariest costume character to win amazing prizes for you.</p>
-                        <div class="d-flex justify-content-evenly ">
-                            <div class="d-flex align-items-center">
-                                <p class="card-text">Price $12</p>
-                            </div>
-                            <a href="../pages/details.html" class="btn btn-primary">Details.</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/music_concert.jpg" class="card-img-top h-50" alt="Card 4 Metallica in concert">
-                    <div class="card-body">
-                        <h5 class="card-title ">Metallica in concert</h5>
-                        <p class="card-text">The only concert of the most emblematic band in the world right here.</p>
+                        <h5 class="card-title ">Festival of the collectivities</h5>
+                        <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for
+                            the whole family.</p>
                         <div class="d-flex justify-content-evenly">
                             <div class="d-flex align-items-center">
-                                <p class="card-text">Price $150</p>
+                                <p class="card-text">Price $5</p>
                             </div>
-                            <a href="../pages/details.html" class="btn btn-primary">Details.</a>
+                            <a href="./details.html" class="btn btn-primary">Details.</a>
                         </div>
                     </div>
                 </div>
 
-
-
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/cinema.jpg" class="card-img-top h-50" alt="Card 7 Avengers">
+                <div class="noHay" style="width: 18rem;" id="noHay"> 
                     <div class="card-body">
-                        <h5 class="card-title ">Avengers</h5>
-                        <p class="card-text">Marvel's Avengers 3d premiere the start of an epic saga with your best superheroes.</p>
-                        <div class="d-flex justify-content-evenly">
+                        <h1 class="card-title ">No hay resultados para tu busqueda</h1>
+    
+                        <div class="d-flex justify-content-evenly m-5">
                             <div class="d-flex align-items-center">
-                                <p class="card-text">Price $250</p>
+                            
                             </div>
-                            <a href="../pages/details.html" class="btn btn-primary">Details.</a>
                         </div>
                     </div>
                 </div>
+                
             </div>
-
         </div>
-
-
-
-
-
-
-
+        
 
     </main>
     <footer>
@@ -266,9 +224,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="../JavaScript/upcoming.js"></script>
-        
-
+<script src="../JavaScript/upcoming.js"></script>
 </body>
 
 </html>
