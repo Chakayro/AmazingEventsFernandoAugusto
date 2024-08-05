@@ -1,313 +1,163 @@
-const data = {
-  currentDate: "2023-01-01",
-  events: [
-    {
-      _id: "639c723b992482e5f2834be9",
-      name: "Collectivities Party",
-      image: "https://i.postimg.cc/Fs03hQDt/Collectivities-Party.jpg",
-      date: "2022-12-12",
-      description:
-        "Enjoy your favourite dishes, from different countries, in a unique event for the whole family.",
-      category: "Food Fair",
-      place: "Room A",
-      capacity: 45000,
-      assistance: 42756,
-      price: 5,
-      __v: 0,
-    },
-    {
-      _id: "639c723b992482e5f2834beb",
-      name: "Korean style",
-      image: "https://i.postimg.cc/ZmD3Xf57/Korean-style.jpg",
-      date: "2023-08-12",
-      description:
-        "Enjoy the best Korean dishes, with international chefs and awesome events.",
-      category: "Food Fair",
-      place: "Room A",
-      capacity: 45000,
-      price: 10,
-      __v: 0,
-      estimate: 42756,
-    },
-    {
-      _id: "639c723c992482e5f2834bed",
-      name: "Jurassic Park",
-      image: "https://i.postimg.cc/GmHRkbNV/Jurassic-Park.jpg",
-      date: "2022-11-02",
-      description:
-        "Let's go meet the biggest dinosaurs in the paleontology museum.",
-      category: "Museum",
-      place: "Field",
-      capacity: 82000,
-      price: 15,
-      __v: 0,
-      assistance: 65892,
-    },
-    {
-      _id: "639c723c992482e5f2834bef",
-      name: "Parisian Museum",
-      image: "https://i.postimg.cc/c4C2zXm8/Parisian-Museum.jpg",
-      date: "2023-11-02",
-      description:
-        "A unique tour in the city of lights, get to know one of the most iconic places.",
-      category: "Museum",
-      place: "Paris",
-      capacity: 8200,
-      estimate: 8200,
-      price: 3500,
-      __v: 0,
-    },
-    {
-      _id: "639c723c992482e5f2834bf1",
-      name: "Comicon",
-      image: "https://i.postimg.cc/KYD0jMf2/comicon.jpg",
-      date: "2022-02-12",
-      description:
-        "For comic lovers, all your favourite characters gathered in one place.",
-      category: "Costume Party",
-      place: "Room C",
-      capacity: 120000,
-      assistance: 110000,
-      price: 54,
-      __v: 0,
-    },
-    {
-      _id: "639c723c992482e5f2834bf3",
-      name: "Halloween Night",
-      image: "https://i.postimg.cc/RZ9fH4Pr/halloween.jpg",
-      date: "2023-02-12",
-      description: "Come with your scariest costume and win incredible prizes.",
-      category: "Costume Party",
-      place: "Room C",
-      capacity: 12000,
-      estimate: 9000,
-      price: 12,
-      __v: 0,
-    },
-    {
-      _id: "639c723c992482e5f2834bf5",
-      name: "Metallica in concert",
-      image: "https://i.postimg.cc/PrMJ0ZMc/Metallica-in-concert.jpg",
-      date: "2023-01-22",
-      description: "The only concert of the most emblematic band in the world.",
-      category: "Music Concert",
-      place: "Room A",
-      capacity: 138000,
-      estimate: 138000,
-      price: 150,
-      __v: 0,
-    },
-    {
-      _id: "639c723c992482e5f2834bf7",
-      name: "Electronic Fest",
-      image: "https://i.postimg.cc/KvsSK8cj/Electronic-Fest.jpg",
-      date: "2022-01-22",
-      description:
-        "The best national and international DJs gathered in one place.",
-      category: "Music Concert",
-      place: "Room A",
-      capacity: 138000,
-      assistance: 110300,
-      price: 250,
-      __v: 0,
-    },
-    {
-      _id: "639c723d992482e5f2834bf9",
-      name: "10K for life",
-      image: "https://i.postimg.cc/fyLqZY9K/10-K-for-life.jpg",
-      date: "2022-03-01",
-      description: "Come and exercise, improve your health and lifestyle.",
-      category: "Race",
-      place: "Soccer field",
-      capacity: 30000,
-      assistance: 25698,
-      price: 3,
-      __v: 0,
-    },
-    {
-      _id: "639c723d992482e5f2834bfb",
-      name: "15K NY",
-      image: "https://i.postimg.cc/zv67r65z/15kny.jpg",
-      date: "2023-03-01",
-      description:
-        "We'll be raising funds for hospitals and medical care in this unique event held in The Big Apple.",
-      category: "Race",
-      place: "New York",
-      capacity: 3000000,
-      price: 3,
-      __v: 0,
-      estimate: 2569800,
-    },
-    {
-      _id: "639c723d992482e5f2834bfd",
-      name: "School's book fair",
-      image: "https://i.postimg.cc/Sst763n6/book1.jpg",
-      date: "2023-10-15",
-      description: "Bring your unused school book and take the one you need.",
-      category: "Book Exchange",
-      place: "Room D1",
-      capacity: 150000,
-      estimate: 123286,
-      price: 1,
-      __v: 0,
-    },
-    {
-      _id: "639c723d992482e5f2834bff",
-      name: "Just for your kitchen",
-      image: "https://i.postimg.cc/05FhxHVK/book4.jpg",
-      date: "2022-11-09",
-      description:
-        "If you're a gastronomy lover come get the cookbook that best suits your taste and your family's.",
-      category: "Book Exchange",
-      place: "Room D6",
-      capacity: 130000,
-      assistance: 90000,
-      price: 100,
-      __v: 0,
-    },
-    {
-      _id: "639c723d992482e5f2834c01",
-      name: "Batman",
-      image: "https://i.postimg.cc/vH52y81C/cinema4.jpg",
-      date: "2022-3-11",
-      description: "Come see Batman fight crime in Gotham City.",
-      category: "Cinema",
-      place: "Room D1",
-      capacity: 11000,
-      assistance: 9300,
-      price: 225,
-      __v: 0,
-    },
-    {
-      _id: "639c723d992482e5f2834c03",
-      name: "Avengers",
-      image: "https://i.postimg.cc/T3C92KTN/scale.jpg",
-      date: "2023-10-15",
-      description:
-        "Marvel's Avengers Premier in 3d, the start of an epic saga with your favourite superheroes.",
-      category: "Cinema",
-      place: "Room D1",
-      capacity: 9000,
-      estimate: 9000,
-      price: 250,
-      __v: 0,
-    },
-  ],
-};
+fetch('https://aulamindhub.github.io/amazing-api/events.json')
+  .then(response => response.json()).then(data => dataAmazing(data))
+  .catch(error => console.log(error));
 
-let tarjeta = document.getElementsByClassName("card");
-let copia = tarjeta[0];
+  import {borrar, pintarTarjeta, buscarTexto, filtrarTarjetas, mostrarFiltrados} from "./modules/funciones.js";
+
+  let tarjeta = document.getElementsByClassName("card");
+  let copia = tarjeta[0];
 let Checkbox = document.getElementsByClassName("checkers");
 let copiaCheckbox = Checkbox[0];
-contador = 0;
+let index = 0;
 let noHay = document.getElementById("noHay");
-
-
-while (tarjeta.length > 0) {
-  tarjeta[0].parentNode.removeChild(tarjeta[0]);
-}
-
-data.events.forEach((event) => {
-  let nuevasTarjetas = document.getElementById("tarjetas").appendChild(copia.cloneNode(true));
-  nuevasTarjetas.querySelector("h5").innerHTML = event.name;
-  nuevasTarjetas.querySelector("img").src = event.image;
-  nuevasTarjetas.getElementsByClassName("card-text")[0].innerHTML = event.description;
-  nuevasTarjetas.getElementsByClassName("card-text")[1].innerText = "Price $" + event.price;
-  let nuevaClase = event.category.replace(/ /g, "");
-  nuevasTarjetas.setAttribute("class", "card " + nuevaClase + " CY");
-  nuevaClase = nuevasTarjetas.className + " TY";
-  nuevasTarjetas.setAttribute("class", nuevaClase);
-});
-
-while (Checkbox.length > 0) {
-  Checkbox[0].parentNode.removeChild(Checkbox[0]);
-}
-
-data.events.forEach((event, index) => {
-  if (index === 0 || event.category !== data.events[index - 1].category) {
-    let nuevosCheckers = document.getElementById("checkboxCategoria").appendChild(copiaCheckbox.cloneNode(true));
-    nuevosCheckers.querySelector("label").innerHTML = event.category;
-    let nuevaClase = event.category.replace(/ /g, "");
-    nuevosCheckers.querySelector("input").setAttribute("id",nuevaClase);
-    nuevosCheckers.querySelector("label").setAttribute("for",nuevaClase);
-  }
-});
-
-let buscarTexto = document.getElementById("buacador");
-buscarTexto.addEventListener("keyup", (e) => {
-  let texto = e.target.value.toLowerCase();
-  Array.from(tarjeta).forEach((tarjeta) => {
-    let nombre = tarjeta.querySelector("h5").innerText.toLowerCase();
-    let descripcion = tarjeta.querySelector("p").innerText.toLowerCase();
-    if (nombre.includes(texto) || descripcion.includes(texto)) {
-      tarjeta.setAttribute("class", tarjeta.className.replace(" TN", " TY"));
-
-    } else {
-      tarjeta.setAttribute("class", tarjeta.className.replace(" TY", " TN"));
-    }
-  });
-  mostrarFiltrados();
-});
-
-let CheckboxCategoria = document.getElementById("checkboxCategoria")
-CheckboxCategoria.addEventListener("click", (e) => {
-  let checkbox = e.target;
-  let nombreCheckbox = checkbox.parentElement.innerText.replace(/ /g, "");
-  if (checkbox.type === "checkbox") {
-    contador++;
-  Array.from(tarjeta).forEach((tarjeta) => {
-    if (contador === 1) {
-      tarjeta.setAttribute("class", tarjeta.className.replace(" CY", " CN"));
-    }
-    if (checkbox.checked) {
-      if (tarjeta.classList.contains(nombreCheckbox)) {
-        tarjeta.setAttribute("class", tarjeta.className.replace(" CN", " CY"));
-      }
-    }else {
-      if (tarjeta.classList.contains(nombreCheckbox)) {
-        tarjeta.setAttribute("class", tarjeta.className.replace(" CY", " CN"));
-      }
-      if (contador ===  2 ) {
-        tarjeta.setAttribute("class", tarjeta.className.replace(" CN", " CY"));
-      }
-  }
- 
-});
-if (checkbox.checked === false) {
-    contador -= 2;
-}
-mostrarFiltrados();
-  }
-});
-
-
-let numero = 0;
-
-
-function mostrarFiltrados() {
-  Array.from(tarjeta).forEach((tarjeta) => {
-    if (tarjeta.classList.contains("CY") && tarjeta.classList.contains("TY")) {
-      tarjeta.style.display = "block";
-      if (tarjeta.style.display === "block" && tarjeta.classList.contains("TY")) {
-        if (numero > 0) {
-          numero--;
-        }
-      }
-    }else {
-      tarjeta.style.display = "none";
-      if (tarjeta.style.display === "none" && tarjeta.classList.contains("TN")) {
-        if (numero <13) {
-          numero++;
-        }
-      }
-    }
-
-  });
-  if (numero === 13) {
-    noHay.style.display = "block";
-  } else {
-    noHay.style.display = "none";
-
-  }
-}
 noHay.style.display = "none";
+
+    borrar(0, tarjeta);
+    borrar(0, Checkbox);
+
+  function dataAmazing(data) {
+    pintarTarjeta(data, copia, copiaCheckbox , index);
+  }
+
+  buscarTexto(tarjeta, noHay); 
+  filtrarTarjetas(tarjeta, noHay);
+  mostrarFiltrados(tarjeta, noHay);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  // mensajeAmigable(tarjeta);
+
+//   Checkbox[0].parentNode.removeChild(Checkbox[0]);
+  // function datosEspecies(data) {
+  //   let existingCategories = [];
+  //   data.events.forEach((event) => {
+  //     let nuevasTarjetas = document.getElementById("tarjetas").appendChild(copia.cloneNode(true));
+  //     nuevasTarjetas.querySelector("h5").innerHTML = event.name;
+  //     nuevasTarjetas.querySelector("img").src = event.image;
+  //     nuevasTarjetas.getElementsByClassName("card-text")[0].innerHTML = event.description;
+  //     // nuevasTarjetas.getElementsByClassName("card-text")[1].innerText = "Price $" + event.price;
+  //     nuevasTarjetas.getElementsByClassName("card-text")[1].innerText = event._id;
+  //     let nuevaClase = event.category.replace(/ /g, "");
+  //     nuevasTarjetas.setAttribute("class", "card " + nuevaClase + " CY TY");
+  //     nuevasTarjetas.setAttribute("id", event._id);
+  //     nuevasTarjetas.querySelector("a").setAttribute("href", "./pages/details.html?id=" + event._id);
+
+  //     if (!existingCategories.includes(event.category)) {
+  //       let nuevosCheckers = document.getElementById("checkboxCategoria").appendChild(copiaCheckbox.cloneNode(true));
+  //       nuevosCheckers.querySelector("label").innerHTML = event.category;
+  //       let nuevaClase = event.category.replace(/ /g, "");
+  //       nuevosCheckers.querySelector("input").setAttribute("id", nuevaClase);
+  //       nuevosCheckers.querySelector("label").setAttribute("for", nuevaClase);
+  //       existingCategories.push(event.category);
+  //     }
+  //   });
+  // }
+
+
+
+
+
+
+
+
+
+
+// let buscarTexto = document.getElementById("buscador").addEventListener("keyup", (e) => {
+//   let texto = e.target.value.toLowerCase();
+//   Array.from(tarjeta).forEach((tarjeta, index) => {
+//     let nombre = tarjeta.querySelector("h5").innerText.toLowerCase();
+//     let descripcion = tarjeta.querySelector("p").innerText.toLowerCase();
+    
+//     if (nombre.includes(texto) || descripcion.includes(texto)) {
+//       tarjeta.setAttribute("class", tarjeta.className.replace(" TN", " TY"));
+//     } else {
+//       tarjeta.setAttribute("class", tarjeta.className.replace(" TY", " TN"));
+//     }
+//   });
+//   mostrarFiltrados();
+// });
+
+// let CheckboxCategoria = document.getElementById("checkboxCategoria").addEventListener("click", (e) => {
+//   let checkbox = e.target;
+//   let nombreCheckbox = checkbox.parentElement.innerText.replace(/ /g, "");
+//   if (checkbox.type === "checkbox") {
+//     contador++;
+//   Array.from(tarjeta).forEach((tarjeta) => {
+//     if (contador === 1) {
+//       tarjeta.setAttribute("class", tarjeta.className.replace(" CY", " CN"));
+//     }
+//     if (checkbox.checked) {
+//       if (tarjeta.classList.contains(nombreCheckbox)) {
+//         tarjeta.setAttribute("class", tarjeta.className.replace(" CN", " CY"));
+//       }
+//     }else {
+//       if (tarjeta.classList.contains(nombreCheckbox)) {
+//         tarjeta.setAttribute("class", tarjeta.className.replace(" CY", " CN"));
+//       }
+//       if (contador ===  2 ) {
+//         tarjeta.setAttribute("class", tarjeta.className.replace(" CN", " CY"));
+//       }
+//   }
+ 
+// });
+// if (checkbox.checked === false) {
+//     contador -= 2;
+// }
+// mostrarFiltrados();
+//   }
+// });
+
+
+
+
+// function mostrarFiltrados() {
+//   Array.from(tarjeta).forEach((tarjeta) => {
+//     if (tarjeta.classList.contains("CY") && tarjeta.classList.contains("TY")) {
+//       tarjeta.style.display = "block";
+//     }else {
+//       tarjeta.style.display = "none";
+//     }
+//   });
+
+//   if (mensajeAmigable() === tarjeta.length) {
+//     noHay.style.display = "block";
+//    }else{
+//     noHay.style.display = "none";
+//    }
+// }
+
+
+ 
+
+
+
+
+// function mensajeAmigable(){
+//   let contadors = 0;
+//   for (let i = 0; i < tarjeta.length; i++) {
+//     for (let j = 0; j < tarjeta.length; j++) {
+//       if (tarjeta[i].style.display === "none" && tarjeta[i].id === tarjeta[j].id) {
+//         contadors++;
+//       }else if (tarjeta[i].style.display === "block" && tarjeta[i].id === tarjeta[j].id){
+//         contadors--;
+//       }
+//     }
+//   }
+//   return contadors; 
+// }
+   
+

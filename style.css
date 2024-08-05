@@ -24,15 +24,15 @@
     
 }
 .card{
-    margin:4px;
+    margin:6px;
 }
 
 .detailsImg{
     height: 100;
     object-fit: cover;
 }
-.card-body>p{
-    height: 5rem;
+.textoTarjetas>p{
+    height: 6rem;
 }
 
 @media (min-width: 993px) { 
@@ -62,3 +62,5 @@
 
     
 }
+
+
