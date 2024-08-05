@@ -27,6 +27,14 @@ export function pintarTarjeta(datos, copia, copiaCheckbox, fecha) {
                 tarjetasPast.querySelector("a").setAttribute("href", "./details.html?id=" + event._id);
                 contadorPast++;
                 console.log(contadorPast + " contadorPast");
+                if (!existingCategories.includes(event.category)) {
+                    let nuevosCheckers = document.getElementById("checkboxCategoria").appendChild(copiaCheckbox.cloneNode(true));
+                    nuevosCheckers.querySelector("label").innerHTML = event.category;
+                    let nuevaClase = event.category.replace(/ /g, "");
+                    nuevosCheckers.querySelector("input").setAttribute("id", nuevaClase);
+                    nuevosCheckers.querySelector("label").setAttribute("for", nuevaClase);
+                    existingCategories.push(event.category);
+                }
             }
         } else if (fecha === 0) {
             tarjetasIndex = document.getElementById("tarjetas").appendChild(copia.cloneNode(true));
@@ -40,6 +48,14 @@ export function pintarTarjeta(datos, copia, copiaCheckbox, fecha) {
             tarjetasIndex.querySelector("a").setAttribute("href", "./pages/details.html?id=" + event._id);
             contadorIndex++;
             console.log(contadorIndex + " contadorIndex");
+            if (!existingCategories.includes(event.category)) {
+                let nuevosCheckers = document.getElementById("checkboxCategoria").appendChild(copiaCheckbox.cloneNode(true));
+                nuevosCheckers.querySelector("label").innerHTML = event.category;
+                let nuevaClase = event.category.replace(/ /g, "");
+                nuevosCheckers.querySelector("input").setAttribute("id", nuevaClase);
+                nuevosCheckers.querySelector("label").setAttribute("for", nuevaClase);
+                existingCategories.push(event.category);
+            }
         } else if (fecha === 2) {
             if (event.date > datos.currentDate) {
                 tarjetasUpcoming = document.getElementById("tarjetas").appendChild(copia.cloneNode(true));
@@ -53,16 +69,17 @@ export function pintarTarjeta(datos, copia, copiaCheckbox, fecha) {
                 tarjetasUpcoming.querySelector("a").setAttribute("href", "./details.html?id=" + event._id);
                 contadorUpcoming++;
                 console.log(contadorUpcoming + " contadorUpcoming");
+                if (!existingCategories.includes(event.category)) {
+                    let nuevosCheckers = document.getElementById("checkboxCategoria").appendChild(copiaCheckbox.cloneNode(true));
+                    nuevosCheckers.querySelector("label").innerHTML = event.category;
+                    let nuevaClase = event.category.replace(/ /g, "");
+                    nuevosCheckers.querySelector("input").setAttribute("id", nuevaClase);
+                    nuevosCheckers.querySelector("label").setAttribute("for", nuevaClase);
+                    existingCategories.push(event.category);
+                }
             }
         }
-        if (!existingCategories.includes(event.category)) {
-            let nuevosCheckers = document.getElementById("checkboxCategoria").appendChild(copiaCheckbox.cloneNode(true));
-            nuevosCheckers.querySelector("label").innerHTML = event.category;
-            let nuevaClase = event.category.replace(/ /g, "");
-            nuevosCheckers.querySelector("input").setAttribute("id", nuevaClase);
-            nuevosCheckers.querySelector("label").setAttribute("for", nuevaClase);
-            existingCategories.push(event.category);
-        }
+        
     });
     if (contadorIndex > 0) {
         contador = contadorIndex;
